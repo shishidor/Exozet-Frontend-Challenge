@@ -1,0 +1,346 @@
+/*globals*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("../images/background.jpg");
+}
+
+.container{
+	width: 75%;
+	margin: auto;
+	background-color: #ffffff;
+	box-shadow: 0 0 5px 5px #E0E0E0;
+	overflow: hidden;
+	padding: 0 30px;
+	font: normal 14px/1.5 'Titillium Web', sans-serif;
+}
+
+#main{
+	float: left;
+	width: 65%;
+	margin-top: 43px;
+}
+
+#side{
+	float: right;
+	width: 22%;
+	margin-top: 70px;
+}
+
+.clr{
+	clear: both;
+}
+
+.green-text{
+	color: #739024;
+}
+
+.black-text{
+	color: #000000; 
+}
+
+h2{
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+}
+
+.button{
+	display:block;
+	color: #ffffff;
+	background-color: #8fa751;
+	border: 1px solid #8fa751;
+	border-radius: 5px;
+	font: normal 14px 'Titillium Web', sans-serif;
+	box-shadow: 0 4px 2px -2px #E0E0E0;
+}
+
+.image{
+	width: 220px;
+}
+
+/*header*/
+
+#logo{
+	padding: 44px 30px 30px 0;
+	float: left;
+}
+
+header nav{
+	float:right;	
+}
+
+nav a{
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+nav .current a{
+	color:#000000;
+	background-color: #e8e7e8;
+	border-radius: 3px;
+	border: 1px solid #c3c0c5;
+	padding: 7px 19px;
+}
+
+nav ul{
+	padding: 44px 11px 0 0;
+}
+
+nav li{
+	display: inline-block;
+	padding:12px 0 12px 40px;
+}
+
+.line-header{
+	color: #c3c0c5;
+}
+
+/*section headline*/
+
+#date{
+	color: #999999;
+}
+
+#headline-box h1{
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+#headline-box h3{
+	font: italic 18px 'Merriweather', serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.line-middle{
+	color: #c3c0c5;
+	width: 300px;
+	margin: 15px auto;
+}
+
+#lorempixel{
+	display: flex;
+	flex-direction: column;
+	float: left;
+	padding: 20px 20px 10px 0;
+	font: normal 11px verdana;
+	color: #999999;
+}
+
+/*section form*/
+
+#form-box{
+	margin-top: 50px;
+}
+
+.line-form{
+	color: #c3c0c5;
+	width: 620px;
+	margin-bottom: 30px;
+}
+
+#form-text{
+	margin-left: 170px;
+}
+
+#error-text{
+	color: #ff0000;
+	font: normal 13px verdana;
+}
+
+.form-row label{
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+}
+
+.form-row input, textarea{
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 12px 0 0 20px;
+}
+
+.form-row textarea{
+	height: 100px;
+	border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.button-form{
+	padding: 5px 17px;
+	margin: 11px 0 0 360px;
+}
+
+/* article */
+
+#article-box{
+	margin-top: 45px;
+}
+
+#article-box ol{
+	margin: 0 0 33px 20px;
+	float: left;
+}
+
+#article-box p{
+	margin-top: 0;
+	float: right;
+}
+
+/* footer*/
+
+footer{
+	padding-bottom: 45px;
+}
+
+.line-footer{
+	color: #c3c0c5;
+	margin-bottom: 17px;
+}
+
+footer p{
+	float: left;
+}
+
+footer ul{
+	float: right;
+}
+
+footer li{
+	display: inline-block;
+	padding: 0 10px;
+    border-right:1px solid #739024;
+    padding:0 10px;
+}
+
+footer li:last-child{
+    border-right:none;
+}
+
+/*side*/
+
+.line-side-1{
+	margin: 8px 0 16px 0;
+}
+
+aside h3{
+	font-size: 18px;
+}
+
+aside ul{
+	list-style: none;   
+	margin-bottom: 38px;
+}
+
+aside li:before{
+ content: '> ';
+ color: #739024;
+}
+
+.fa{
+	padding-right: 5px;
+}
+
+#contact{
+	margin: 26px 0 38px 0;
+}
+
+.line-side-2{
+	margin: 8px 0 10px 0;
+}
+
+#side-box{
+	background-color: #eeeeee;
+	text-align: center;
+	font: normal 13px verdana;
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+}
+
+#side-box p{
+	padding: 10px 10px 15px 10px;
+}
+
+.button-side{
+	padding: 5px 65px;
+	margin: 0 10px 10px 10px;	
+}
+
+
+/*Media Queries*/
+
+@media(max-width: 1024px){ 
+	#logo, header nav, #main, #side, #lorempixel, .image, #side-box, footer p, footer ul, #article-box ol, #article-box p{
+		float:none;
+		width: 100%;
+	}
+
+	#logo, h1, #form-text, footer p, footer ul{
+		text-align: center;
+	}
+
+	nav a{
+		font-size: 13px;
+	}
+
+	nav .current a{
+		color:#000000;
+		background-color: #e8e7e8;
+		border-radius: 3px;
+		border: 1px solid #c3c0c5;
+		padding: 5px 13px;
+	}
+
+	nav li{
+		padding: 0 12px 0 0;
+	}
+
+	nav ul{
+		padding: 0 0 50px 0;
+	}
+
+	#form{
+		margin:auto;
+	}
+
+	.form-row input, textarea{
+		width: 80%;
+	}
+
+	.form-row label{
+		text-align: left;
+	}
+
+	#form-text{
+		margin: auto;
+	}
+
+	#button-form{
+		width: 50%;
+		margin: 20px auto;
+	}
+
+	#side-box{
+		margin-bottom: 40px;
+	}
+
+}
+
+
+
