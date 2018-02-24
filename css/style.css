@@ -181,7 +181,7 @@ nav li{
     border-image: initial;
 }
 
-.button-form{
+#button-form{
 	padding: 5px 17px;
 	margin: 11px 0 0 360px;
 }
@@ -277,7 +277,7 @@ aside li:before{
 	padding: 10px 10px 15px 10px;
 }
 
-.button-side{
+#button-side{
 	padding: 5px 65px;
 	margin: 0 10px 10px 10px;	
 }
@@ -335,6 +335,12 @@ aside li:before{
 		width: 50%;
 		margin: 20px auto;
 	}
+
+	#button-side{
+		width: 50%;
+		padding: 5px 10px;
+		margin: 10px auto;	
+}
 
 	#side-box{
 		margin-bottom: 40px;
