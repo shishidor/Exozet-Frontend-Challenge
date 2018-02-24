@@ -291,7 +291,7 @@ aside li:before{
 		width: 100%;
 	}
 
-	#logo, h1, #form-text, footer p, footer ul{
+	#logo, h1, #form-text, footer p, footer ul, nav{
 		text-align: center;
 	}
 
